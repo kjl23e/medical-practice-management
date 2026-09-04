@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Assignment2.ViewPhysiciansPage"
+             Title="View Physicians">
+
+    <Grid RowDefinitions="Auto,*" Padding="20">
+
+        <VerticalStackLayout Grid.Row="0" Spacing="10" Margin="0,0,0,20">
+            <Label Text="Physicians List" FontSize="20" FontAttributes="Bold"/>
+            <Button Text="Back to Home" Clicked="OnBackClicked"/>
+        </VerticalStackLayout>
+
+        <ScrollView Grid.Row="1">
+            <VerticalStackLayout x:Name="PhysiciansContainer" Spacing="15"/>
+        </ScrollView>
+
+    </Grid>
+
+</ContentPage>

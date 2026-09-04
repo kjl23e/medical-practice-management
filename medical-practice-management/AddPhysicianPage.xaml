@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Assignment2.AddPhysicianPage"
+             Title="Add Physician">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="30" Spacing="15">
+
+            <Label Text="Add New Physician" FontSize="20" FontAttributes="Bold"/>
+
+            <Label Text="Name:"/>
+            <Entry x:Name="NameEntry"/>
+
+            <Label Text="License Number:"/>
+            <Entry x:Name="LicenseEntry"/>
+
+            <Label Text="Graduation Date:"/>
+            <Entry x:Name="GraduationEntry" Placeholder="MM/DD/YYYY"/>
+
+            <Label Text="Specialization:"/>
+            <Entry x:Name="SpecializationEntry"/>
+
+            <Button Text="Save Physician" Clicked="OnSaveClicked" BackgroundColor="#2196F3"/>
+            <Button Text="Back to Home" Clicked="OnBackClicked"/>
+
+            <Label x:Name="MessageLabel" TextColor="Red"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

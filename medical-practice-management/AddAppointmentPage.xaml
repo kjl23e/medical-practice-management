@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Assignment2.AddAppointmentPage"
+             Title="Add Appointment">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="30" Spacing="15">
+
+            <Label Text="Add New Appointment" FontSize="20" FontAttributes="Bold"/>
+
+            <Label Text="Select Patient:"/>
+            <Picker x:Name="PatientPicker"/>
+
+            <Label Text="Select Physician:"/>
+            <Picker x:Name="PhysicianPicker"/>
+
+            <Label Text="Day (Monday-Friday):"/>
+            <Picker x:Name="DayPicker">
+                <Picker.Items>
+                    <x:String>MONDAY</x:String>
+                    <x:String>TUESDAY</x:String>
+                    <x:String>WEDNESDAY</x:String>
+                    <x:String>THURSDAY</x:String>
+                    <x:String>FRIDAY</x:String>
+                </Picker.Items>
+            </Picker>
+
+            <Label Text="Time (8:00am-5:00pm):"/>
+            <Picker x:Name="TimePicker">
+                <Picker.Items>
+                    <x:String>8:00am</x:String>
+                    <x:String>8:30am</x:String>
+                    <x:String>9:00am</x:String>
+                    <x:String>9:30am</x:String>
+                    <x:String>10:00am</x:String>
+                    <x:String>10:30am</x:String>
+                    <x:String>11:00am</x:String>
+                    <x:String>11:30am</x:String>
+                    <x:String>12:00pm</x:String>
+                    <x:String>12:30pm</x:String>
+                    <x:String>1:00pm</x:String>
+                    <x:String>1:30pm</x:String>
+                    <x:String>2:00pm</x:String>
+                    <x:String>2:30pm</x:String>
+                    <x:String>3:00pm</x:String>
+                    <x:String>3:30pm</x:String>
+                    <x:String>4:00pm</x:String>
+                    <x:String>4:30pm</x:String>
+                    <x:String>5:00pm</x:String>
+                </Picker.Items>
+            </Picker>
+
+            <Label Text="Room:"/>
+            <Picker x:Name="RoomPicker">
+                <Picker.Items>
+                    <x:String>Room 101</x:String>
+                    <x:String>Room 102</x:String>
+                    <x:String>Room 103</x:String>
+                    <x:String>Room 104</x:String>
+                    <x:String>Room 105</x:String>
+                </Picker.Items>
+            </Picker>
+
+            <Button Text="Save Appointment" Clicked="OnSaveClicked" BackgroundColor="#FF9800"/>
+            <Button Text="Back to Home" Clicked="OnBackClicked"/>
+
+            <Label x:Name="MessageLabel" TextColor="Red"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Assignment2.MainPage"
+             Title="Medical Practice Management">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="30" Spacing="20">
+
+            <Label Text="Medical Practice Management System"
+                   FontSize="24"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   Margin="0,0,0,20"/>
+
+            <Button Text="Add Patient" 
+                    Clicked="OnAddPatientClicked"
+                    BackgroundColor="#4CAF50"/>
+
+            <Button Text="Add Physician" 
+                    Clicked="OnAddPhysicianClicked"
+                    BackgroundColor="#2196F3"/>
+
+            <Button Text="Add Appointment" 
+                    Clicked="OnAddAppointmentClicked"
+                    BackgroundColor="#FF9800"/>
+
+            <Button Text="Show Patients" 
+                    Clicked="OnShowPatientsClicked"
+                    BackgroundColor="#9C27B0"/>
+
+            <Button Text="Show Physicians" 
+                    Clicked="OnShowPhysiciansClicked"
+                    BackgroundColor="#009688"/>
+
+            <Button Text="Show Appointments" 
+                    Clicked="OnShowAppointmentsClicked"
+                    BackgroundColor="#F44336"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

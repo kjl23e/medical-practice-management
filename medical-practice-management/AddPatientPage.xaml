@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Assignment2.AddPatientPage"
+             Title="Add Patient">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="30" Spacing="15">
+
+            <Label Text="Add New Patient" FontSize="20" FontAttributes="Bold"/>
+
+            <Label Text="Name:"/>
+            <Entry x:Name="NameEntry"/>
+
+            <Label Text="Address:"/>
+            <Entry x:Name="AddressEntry"/>
+
+            <Label Text="Birthdate:"/>
+            <Entry x:Name="BirthdateEntry" Placeholder="MM/DD/YYYY"/>
+
+            <Label Text="Race:"/>
+            <Entry x:Name="RaceEntry"/>
+
+            <Label Text="Gender:"/>
+            <Entry x:Name="GenderEntry"/>
+
+            <Button Text="Save Patient" Clicked="OnSaveClicked" BackgroundColor="#4CAF50"/>
+            <Button Text="Back to Home" Clicked="OnBackClicked"/>
+
+            <Label x:Name="MessageLabel" TextColor="Red"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Assignment2.ViewPatientsPage"
+             Title="View Patients">
+
+    <Grid RowDefinitions="Auto,*" Padding="20">
+
+        <VerticalStackLayout Grid.Row="0" Spacing="10" Margin="0,0,0,20">
+            <Label Text="Patients List" FontSize="20" FontAttributes="Bold"/>
+
+            <HorizontalStackLayout Spacing="10">
+                <Label Text="Sort By:" VerticalOptions="Center"/>
+                <Picker x:Name="SortPicker" SelectedIndexChanged="OnSortChanged" WidthRequest="150">
+                    <Picker.Items>
+                        <x:String>Name (A-Z)</x:String>
+                        <x:String>Name (Z-A)</x:String>
+                        <x:String>Birthdate (Oldest)</x:String>
+                        <x:String>Birthdate (Youngest)</x:String>
+                    </Picker.Items>
+                </Picker>
+            </HorizontalStackLayout>
+
+            <Button Text="Back to Home" Clicked="OnBackClicked"/>
+        </VerticalStackLayout>
+
+        <ScrollView Grid.Row="1">
+            <VerticalStackLayout x:Name="PatientsContainer" Spacing="15"/>
+        </ScrollView>
+
+    </Grid>
+
+</ContentPage>

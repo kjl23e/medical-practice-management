@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       xmlns:local="clr-namespace:Assignment2"
+       x:Class="Assignment2.AppShell">
+
+    <ShellContent Title="Home"
+                  ContentTemplate="{DataTemplate local:MainPage}"
+                  Route="MainPage" />
+
+    <ShellContent Title="Add Patient"
+                  ContentTemplate="{DataTemplate local:AddPatientPage}"
+                  Route="AddPatientPage" />
+
+    <ShellContent Title="Add Physician"
+                  ContentTemplate="{DataTemplate local:AddPhysicianPage}"
+                  Route="AddPhysicianPage" />
+
+    <ShellContent Title="Add Appointment"
+                  ContentTemplate="{DataTemplate local:AddAppointmentPage}"
+                  Route="AddAppointmentPage" />
+
+    <ShellContent Title="View Patients"
+                  ContentTemplate="{DataTemplate local:ViewPatientsPage}"
+                  Route="ViewPatientsPage" />
+
+    <ShellContent Title="View Physicians"
+                  ContentTemplate="{DataTemplate local:ViewPhysiciansPage}"
+                  Route="ViewPhysiciansPage" />
+
+    <ShellContent Title="View Appointments"
+                  ContentTemplate="{DataTemplate local:ViewAppointmentsPage}"
+                  Route="ViewAppointmentsPage" />
+
+</Shell>
